@@ -25,7 +25,7 @@ if ($contador > 0  && password_verify($password, $password_tabla)) {
     $_SESSION['tipo_mensaje'] = "success";
     $_SESSION['sesion_email'] = $email;
     $_SESSION['sesion_nombre'] = $usuario['nombres'];
-    $_SESSION['sesion_cargo'] = $usuario['cargo'];
+    $_SESSION['sesion_rol_id'] = $usuario['rol_id'];
     header('Location: ' . APP_URL . '/admin');
     exit;
 } else {
