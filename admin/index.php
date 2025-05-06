@@ -1,19 +1,13 @@
 <?php
 include('../app/config.php');
-<<<<<<< HEAD
 include('../app/controllers/roles/listado_de_roles.php');
 include('../admin/layout/parte1admin.php');
 include('../app/controllers/usuarios/listado_de_usuarios.php');
-=======
-include('../admin/validar_sesion.php');
-include('../admin/layout/parte1admin.php');
->>>>>>> 4df50ca6bfb824f68fdec04d4791721720ea69c4
 ?>
 
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
   <br>
-<<<<<<< HEAD
   <div class="container">
     <div class="container">
       <div class="row">
@@ -62,7 +56,7 @@ include('../admin/layout/parte1admin.php');
                 <p>Roles registrados</p>
               </div>
               <div class="icon">
-                <i class="fas"><i class="bi bi-people-fill"></i></i>
+                <i class="fas"><i class="bi bi-peopl"></i></i>
               </div>
               <a href="<?=APP_URL;?>/admin/roles" class="small-box-footer">
                 Más información <i class="fas fa-arrow-circle-right"></i>
@@ -72,12 +66,6 @@ include('../admin/layout/parte1admin.php');
 
 
 
-=======
-  <div class="content">
-    <div class="container-fluid">
-      <div class="row">
-        <h1>VISTA PRINCIPAL</h1>
->>>>>>> 4df50ca6bfb824f68fdec04d4791721720ea69c4
       </div>
       <!-- /.row -->
     </div><!-- /.container-fluid -->

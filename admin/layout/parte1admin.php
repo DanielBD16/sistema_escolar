@@ -14,11 +14,7 @@ $email_sesion = $_SESSION['sesion_email'];
 
 try {
     // Obtener los datos del usuario logueado
-<<<<<<< HEAD
     $query = $pdo->prepare("SELECT id_usuario, nombres, rol_id AS cargo, email FROM usuarios WHERE email = :email AND estado = 1 LIMIT 1");
-=======
-    $query = $pdo->prepare("SELECT id_usuario, nombres, r.nombre_rol, email FROM usuarios WHERE email = :email AND estado = 1 LIMIT 1");
->>>>>>> 4df50ca6bfb824f68fdec04d4791721720ea69c4
     $query->execute(['email' => $email_sesion]);
 
     $usuario = $query->fetch(PDO::FETCH_ASSOC);
