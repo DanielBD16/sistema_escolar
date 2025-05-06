@@ -30,7 +30,7 @@ CREATE TABLE usuarios (
     fyh_creacion DATETIME NULL,
     fyh_actualizacion DATETIME NULL,
     estado VARCHAR(11),
-    FOREIGN KEY (rol_id) REFERENCES roles (id_rol) ON DELETE CASCADE ON UPDATE CASCADE
+    FOREIGN KEY (rol_id) REFERENCES roles (id_rol) ON DELETE NO ACTION ON UPDATE CASCADE
 ) ENGINE = InnoDB;
 
 INSERT INTO

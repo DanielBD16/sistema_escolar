@@ -14,7 +14,7 @@ $email_sesion = $_SESSION['sesion_email'];
 
 try {
     // Obtener los datos del usuario logueado
-    $query = $pdo->prepare("SELECT id_usuario, nombres, r.nombre_rol, email FROM usuarios WHERE email = :email AND estado = 1 LIMIT 1");
+    $query = $pdo->prepare("SELECT id_usuario, nombres, rol_id AS cargo, email FROM usuarios WHERE email = :email AND estado = 1 LIMIT 1");
     $query->execute(['email' => $email_sesion]);
 
     $usuario = $query->fetch(PDO::FETCH_ASSOC);
@@ -184,7 +184,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                         <li class="nav-item">
                             <a href="#" class="nav-link active">
-                                <i class="nav-icon fas"><i class="bi bi-people-fill"></i></i></i>
+                                <i class="nav-icon fas"><i class="bi bi-people-fill"></i></i></i></i>
                                 <p>
                                     Usuarios
                                     <i class="right fas fa-angle-left"></i>

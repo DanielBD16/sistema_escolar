@@ -6,11 +6,11 @@ define('PASSWORD', ''); // Contraseña de la base de datos
 define('DB', 'schoolmanagement'); // Nombre de la base de datos
 
 define('APP_NAME', 'SCHOOL MANAGEMENT SYSTEM'); // Nombre de la aplicación
-define('APP_URL', 'http://localhost:8080/sisGestionEscolar/'); // URL de la aplicación
+define('APP_URL', 'http://localhost:8080/sisgestionescolar/'); // URL de la aplicación
 define('KEY_API_MAPS', ''); // API KEY de Google Maps
 
 // $servidor = "mysql:dbname=" . DB . ";host=" . SERVIDOR;
-$servidor = "mysql:host=" . SERVIDOR . ";port=3307;dbname=" . DB;
+$servidor = "mysql:host=" . SERVIDOR . ";port=3306;dbname=" . DB;
 
 try {
     $pdo = new PDO($servidor, USUARIO, PASSWORD, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
