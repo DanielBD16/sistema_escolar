@@ -15,8 +15,12 @@
           V. 1.0.
       </div>
       <!-- Default to the left -->
+<<<<<<< HEAD
       <strong>Copyright &copy;<?php $anio_actual = date("Y"); ?>
       <a href="https://adminlte.io">System School Managment</a>.</strong> All rights reserved.
+=======
+      <strong>Copyright &copy;<?=$anio_actual;?>  <a href="https://adminlte.io">System School Managment</a>.</strong> All rights reserved.
+>>>>>>> 4df50ca6bfb824f68fdec04d4791721720ea69c4
   </footer>
   </div>
   <!-- ./wrapper -->

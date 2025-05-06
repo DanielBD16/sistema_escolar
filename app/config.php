@@ -6,7 +6,11 @@ define('PASSWORD', ''); // Contraseña de la base de datos
 define('DB', 'schoolmanagement'); // Nombre de la base de datos
 
 define('APP_NAME', 'SCHOOL MANAGEMENT SYSTEM'); // Nombre de la aplicación
+<<<<<<< HEAD
 define('APP_URL', 'http://localhost:8080/sisgestionescolar/'); // URL de la aplicación
+=======
+define('APP_URL', 'http://localhost:8080/sisGestionEscolar/'); // URL de la aplicación
+>>>>>>> 4df50ca6bfb824f68fdec04d4791721720ea69c4
 define('KEY_API_MAPS', ''); // API KEY de Google Maps
 
 // $servidor = "mysql:dbname=" . DB . ";host=" . SERVIDOR;
